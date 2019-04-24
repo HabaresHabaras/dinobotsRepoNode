@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
+
+</head>
+
+<body id="body">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+    <a class="navbar-brand">Talkbots</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link bg-primary text-white" id="dinobot">Dinobot</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="octobot">Octobot</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="sharkbot">Sharkbot</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9 col-md-7 col-sm-7 col-11" id="chatBox">
+        <!--Here's where the alerts and cards for the messages will be appended  -->
+
+      </div>
+
+      <div class="card col-lg-3 col-md-5 col-sm-4 col-6" id="dinoCard">
+      </div>
+    </div>
+
+    <form class="create-form container" id="formInput">
+      <div class="row justify-content-center">
+        <div class="form-group col-lg-6 col-md-6 col-sm-6 col-9">
+          <input type="text" id="ca" name="name">
+          <button type="submit" class="btn btn-success rounded-pill">Tell bot</button>
+        </div>
+      </div>
+
+      <div class="row" id="endOfPage">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-5">
+          <button type="feed" class="btn btn-secondary rounded-pill" id="feed">Feed bot </button>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-4">
+          <button type="pet" class="btn btn-warning rounded-pill" id="pet">Pet bot </button>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+          <button type="evolve" class="btn btn-danger rounded-pill" id="evolve">Evolve </button>
+        </div>
+      </div>
+
+
+  </div>
+
+  </form>
+  </div>
+  <script src="assets/js/brain.rive"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/script.js">
+  </script>
+</body>
+
+</html>
