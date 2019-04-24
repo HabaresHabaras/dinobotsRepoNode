@@ -75,7 +75,7 @@ bot.setSubroutine("learn", function (rs, args) {
       if (typeof (window) === "object" && window["RiveScript"] !== undefined) {
         engine = window.RiveScript;
       } else if (typeof (RiveScript) === "undefined") {
-        var RiveScript = require("../../lib/rivescript");
+        // var RiveScript = require("../../lib/rivescript");
         engine = RiveScript;
       } else {
         engine = RiveScript;
