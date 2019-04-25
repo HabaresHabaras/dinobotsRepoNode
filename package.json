@@ -4,7 +4,7 @@
   "description": "Simple app, uses mysql, rivescript and more to make a few chatbots that have different personalities and act differently",
   "main": "script.js",
   "scripts": {
-    "start": "npm init",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
