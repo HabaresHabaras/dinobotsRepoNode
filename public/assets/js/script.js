@@ -194,7 +194,7 @@ $(function () {
         }).then(
             function (result) {
                 console.log("will talk more");
-            
+
             }
         );
         // var reply = bot.reply("local-user", command);
@@ -285,7 +285,7 @@ $(function () {
         // $("#dinoCard").append(dinoCard);
         setTimeout(appendBotRes, 1500);
         var creature;
-        if (currentBot == "o/ctobot") {
+        if (currentBot == "octobot") {
             creature = "octoHablando";
         } else if (currentBot == "octoLumino") {
             creature = "octoLuminoHablando";
