@@ -3,7 +3,7 @@ DROP DATABASE if exists chatbots;
 CREATE DATABASE chatbots;
 USE chatbots;
 
-CREATE TABLE chatbotText
+CREATE TABLE chatbottext
 (
 	id int NOT NULL AUTO_INCREMENT,
 	user_input varchar(255) NOT NULL,
