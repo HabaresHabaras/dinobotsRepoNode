@@ -2,6 +2,7 @@ $(function () {
     var userInput;
     var replyBot;
     var currentBot = "dinobot";
+    initShark();
 
     defaultSettings();
 
@@ -26,8 +27,6 @@ $(function () {
         } else if (currentBot == "sharkAngry") {
             creature = "sharkAngryTeeth";
         }
-        initShark();
-
         var dinoCard = '<img src="/assets/images/art/' + creature + '.gif" class="card-img-top" alt="...">';
         $("#dinoCard").html("");
         $("#dinoCard").append(dinoCard);
@@ -46,7 +45,6 @@ $(function () {
                 botOn: true
             };
 
-        // Send the POST request.
         $.ajax("/api/chatbots", {
             type: "POST",
             data: inputObject
@@ -59,8 +57,9 @@ $(function () {
                 replyBot = result.user_response.user_response;
             }
         );
+        // Send the POST request.
         $("#ca").val("");
-        appendUserInput();
+        appendUserInput(inputObject);
         // });
     });
 
@@ -102,6 +101,26 @@ $(function () {
         var command = "feed " + currentBot;
         // var reply = bot.reply("local-user", command);
 
+        var inputObject =
+            {
+                user_input: command,
+                user_response: "",
+                botOn: true
+            };
+
+        $.ajax("/api/chatbots", {
+            type: "POST",
+            data: inputObject
+        }).then(
+            function (result) {
+                console.log("created new cat");
+                console.log(result);
+                // Reload the page to get the updated list
+                // location.reload();
+                replyBot = result.user_response.user_response;
+            }
+        );
+
         var creature;
         if (currentBot == "octobot") {
             creature = "octoComiendo";
@@ -122,15 +141,14 @@ $(function () {
         } else if (currentBot == "sharkAngry") {
             creature = "sharkAngryEat";
         }
-        var dinoCard = '<img src="/public/assets/images/art/' + creature + '.gif" class="card-img-top" alt="...">';
+        var dinoCard = '<img src="/assets/images/art/' + creature + '.gif" class="card-img-top" alt="...">';
         $("#dinoCard").html("");
         $("#dinoCard").append(dinoCard);
 
         // reply.then(function (result) {
         //     console.log(result);
         //     replyBot = result;
-
-        //     setTimeout(appendUserInput, 1250);
+        setTimeout(appendUserInput, 1250);
 
         // });
 
@@ -176,6 +194,7 @@ $(function () {
         $("#dinoCard").html("");
         $("#dinoCard").append(dinoCard);
         setTimeout(defaultSettings, 1250);
+
     });
 
     function initShark() {
@@ -205,7 +224,26 @@ $(function () {
         event.preventDefault();
         var petDino = "'You play with your pet'";
         userInput = petDino;
-        var command = "pet " + currentBot
+        var command = "pet " + currentBot;
+        var inputObject =
+            {
+                user_input: command,
+                user_response: "",
+                botOn: true
+            };
+
+        $.ajax("/api/chatbots", {
+            type: "POST",
+            data: inputObject
+        }).then(
+            function (result) {
+                console.log("created new cat");
+                console.log(result);
+                // Reload the page to get the updated list
+                // location.reload();
+                replyBot = result.user_response.user_response;
+            }
+        );
         // var reply = bot.reply("local-user", command);
 
         // reply.then(function (result) {
@@ -219,13 +257,12 @@ $(function () {
         $("#dinobot").attr('class', 'nav-link');
         $("#sharkbot").attr('class', 'nav-link');
         $("#octobot").addClass('bg-warning text-white');
-        var command = "octobot init";
         // var reply = bot.reply("local-user", command);
         // reply.then(function (result) {
         //     console.log(command);
         // });
-
         currentBot = "octobot";
+        initShark();
         event.preventDefault();
         var dinoCard = '<img src="/assets/images/art/octoPunos.gif" class="card-img-top" alt="...">';
         $("#dinoCard").html("");
@@ -239,13 +276,13 @@ $(function () {
         $("#sharkbot").attr('class', 'nav-link');
         $("#dinobot").addClass('bg-primary text-white');
 
-        var command = "dinobot init";
         // var reply = bot.reply("local-user", command);
         // reply.then(function (result) {
         //     console.log(command);
         // });
 
         currentBot = "dinobot";
+        initShark();
         eraseChatBox();
     });
 
@@ -254,13 +291,12 @@ $(function () {
         $("#octobot").attr('class', 'nav-link');
         $("#sharkbot").addClass('bg-success text-white');
 
-        var command = "sharkbot init";
         // var reply = bot.reply("local-user", command);
         // reply.then(function (result) {
         //     console.log(command);
         // });
-
         currentBot = "sharkbot";
+        initShark();
         eraseChatBox();
     });
 

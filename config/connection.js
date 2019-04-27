@@ -1,9 +1,9 @@
 const mysql = require("mysql");
 
 // Create connection
-if (process.env.JAWSDB_URL) {
-    var db = mysql.createConnection(process.env.JAWSDB_URL)
-} else {
+// if (process.env.JAWSDB_URL) {
+//     var db = mysql.createConnection(process.env.JAWSDB_URL)
+// } else {
     const db = mysql.createConnection({
         host: "localhost",
         port: 3306,
@@ -12,7 +12,7 @@ if (process.env.JAWSDB_URL) {
         database: "chatbots"
     });
 
-};
+// };
 
 // Connect
 db.connect((err) => {

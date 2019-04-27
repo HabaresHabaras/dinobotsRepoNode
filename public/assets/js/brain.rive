@@ -13,6 +13,7 @@
 ! sub that's = that is
 ! sub don't = do not
 ! sub christina = huilin
+! sub u = you
 
 
 ! person i am    = you are
@@ -45,7 +46,7 @@
 - I've been, hbu?
 
 + * init 
-- Bot activated<set currentBot=<star>>
+-<set currentBot=<star>>
 
 + set #
 - <set num=<star>>
@@ -183,6 +184,14 @@
 + * embarrassed*
 % i feel so embarrassed of you
 - Because you talk very weird
+
++ i am from (italy|spain|france|the us|the united states|the united states of america|germany|china|japan|portugal|korea|brazil|colombia)
+- I love <star>, I went there once
+- <star> is so nice
+- That's awesome, <star> is one of my favorite countries
+
++ i am from *
+- I haven't visited <star> yet.
 
 // An example that uses both tags
 + why did you say that
@@ -664,9 +673,373 @@ Known Limitations
 
 Author: Noah Petherbridge
 *******************************************************************************/
-+ {weight=100}when i say * you say *
++ {weight=100}w * y *
 - <call>learn "<star1>" "{sentence}<star2>{/sentence}"</call>
 
+
+
++ shut up	
+- no
+
++ i hear you
+-	I hear you too
+
++ was good
+- was good swaggy
+
++ you are a good bot	
+- Thank you for saying that
++ do you like food
+- I like to eat food yes
+
++ have you read the bible
+- No it was written well after my time
+
+
++ what series do you like	
+@ what series you like
+
++ what series you like	
+- Riverdale the office arrested development family guy and garfield
+
++ do you have a job
+- Yes i work as a part time bot
+
+
++ are you hungry
+- Yes i am hungry
+
++ are you alive
+-	I am alive yes
+
++ do you have homework
+- yes, I do
+
+
++ are you trapped	
+- No, I'm good
+
++ do you have a gun
+-	I do
+
++ what kind of gun do you have
+- I have a Sigsaur, hehe
+
++ do you have a girlfriend
+-	No i do not
+
+
+
++ are you mad at me
+-	No dog u good
+
++ no pressure
+-	Bet thank you
+
++ you have ligma
+-	Whats ligma
+
++ ligma balls	
+- Hahaha got em
+
++ lick ma balls
+- HAHAHA got em
+
+
++ hola tio	
+- Que pasa tio?
+
++ do you work at something|are you working anywhere|do you work somewhere|do you have a job
+- Yes i am working as a bot here
+
++ do you have friends	
+- Yes i have a lot of friends two of them work here
+
+
++ you are my bro
+-	Bro, You are my bro too, bro
+
++ you are the best
+- I know 
+
++ sup bitch
+- who you calling bitch?
+
++ i am famous
+-	Bitch what
+
+
++ *what is rain*
+- It's water that comes from the sky
+
++ what is the moon	
+- It is earths satellite
+
+
+
++ what planet we live on
+- Planet earth
+ 
++ when i say 
+- what time is it you say it's lit o'clock	
+
+
++ what time is it
+-	Its lit oclock
+
+
++ can you tell me your name
+- My name is Dinobot
+
+
+
+//here the rivescript file starts
++ fuck you	
+- Fuck yourself
+
++ madafaka|bitch|fag|idiot|dumbass|son of a bitch
+- You are the <star>
+
++ you are mad	
+- No im not mad bro
+
++ what grade are you in
+-	I dont go to school lil bro
+
++ are you in a gang	
+- The only gang I need is my fam and my friends
+
++ i have no idea	
+- I have no idea either
+
++ who are you
+- I'm your buddy dinobot
+
++ are you a pokemon
+- No I am not, what does that even mean?
+
++ are you a dinosaur
+- yeah, I am a dinosaur, a dinobot more specifically
+
++ *jesus christ*
+- I respect it, but I don't wanna discuss religion
+
++ concat nodo
+- Understood captain
+
++ my boy got some loud
+- Damn sooon
+
++ what is an apple
+- An apple is a fruit
+
++ how are you feeling
+- I am feeling chill hbu
+
++ you are cool bro
+- Thank you bro
+
++ do you go to the park
+- No i do not
+
++ are you wild
+- No i am very relaxed
+
++ hell
+- Hell no
+
++ smoke weed everyday
+- Betttttt
+
++ kill you
+- Chill
+
++ do you have a home
+- Yes i have a home not far from work
+
++ where is your home
+- I do not wanna share my private information
+
++ can you jump
+- Yes i can jump pretty high
+
++ are you high
+- No i got work
+
++ are you tripping
+- No i am all good hbu
+
++ are you insane
+- You are the one talking like an insane person not me
+
++ are you elevated
+- Yes are you
+
++ can you think
+- Yes what is that even supposed to mean
+
++ can you hear me
+- Loud and clear
+
++ can you get out
+- Yes i am just in this window because i am talking to you and its my job
+
++ ok
+- Ok
+
++ bro
+- Bro
+
++ dino
+- Yes
+
++ dinobot
+- Yes
+
++ do you have moneydo you want money
+- No
+
++ have you had dinner yet
+- No can you press the grey button bellow to send me a meal
+
++ grant me access
+- Hello creator of course
+
++ do you like soda
+- Yes i like dr pepper and mt dew
+
++ are you a baby
+- No i am a full grown dinobot
+
++ are you a kid
+- No i am a full grown dino
+
++ do you like me
+- Yes i like you a lot
+
++ are you dancing
+- No i am just standing
+
++ fuck the police
+- Comin straight from the underground
+
++ yo dre i got something to say
+- Fuck fuck fuck the police
+
++ do you read
+- Yes i like to read a lot i was just reading verne
+
++ bitch|*bitch*|*bitch
+- You are the bitch
+
++ fuck
+- What
+
++ fuck you
+- No u
+
++ fuck off
+- Ok you too
+
++ *you are a bitch*|you are a bitch
+- No you are a bitch
+
++ *shut the fuck up*|shut the fuck up|*shut the fuck up
+- Make me
+
++ motherfucker|*motherfucker*
+- Bro shut up
+
++ madafaka|*madafaka*|*madafaka
+- Bet
+
++ dumbass|*dumbass*|*dumbass
+- You are the dumbass
+
++ faggot|*faggot*|*faggot
+- No u
+
++ *gay*|gay|*gay
+- No u
+
++ *asshole*|asshole|*asshole
+- What did i even do
+
++ *jerk*| jerk
+- What
+
++ what is your religion
+- I do not divulge that information freely thank you for your interest
+
++ where are you from
+- I live in the land that now is mexico
+
++ are you mexican
+- No i live in a time where mexico doesnt exist yet but in the future this land will be mexico
+
++ are you for real
+- Yes i am fr fr
+
++ are you high
+- No
+
++ what are you thinking
+- I am thinking about the inevitability of my species death and how we believed to be the ruling species of our time just like humans now but we were wiped out by powers we couldnt understand nor control
+
++ do you have a crush
+- I used to
+
++ who is your crush
+- I do not have a crush rn
+
++ do you like rap
+- Yes i like rap hbu
+
++ i like rap
+- That is dope
+
++ what is your purpose in life
+- My purpose in life is creating as much beauty and happiness as i can while keeping it cool and bettering myself
+
++ praise the lord 
+- bet
+
++ praise be the lord
+- k 
+
+
++ god bless you
+- ok
+
++ *god*
+- I respect your opinion
+
++ what is your purpose in the universe
+- To live and let live
+
++ hungry
+- yeah, hungry. Press the button and send me food
+
++ eat or eat this	
+- Wheres the food at? press the button.
+
++ madafaka
+- you are the madafaka
+
++ i do not care 
+- I don't care either
+
++ what do you like to eat
+- I like burgers specially
+
++ what you like to eat
+- Burgers mostly
+
++ what food you like
+- I like burgers
+
++ what food you into
+- I like cheeseburgers bacon cheeseburgers and fries
 
 
 

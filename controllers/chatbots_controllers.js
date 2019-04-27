@@ -50,7 +50,7 @@ bot.setSubroutine("learn", function (rs, args) {
       if (origMessage !== "undefined") {
         // They have an original message! Re-parse it to get a better
         // pair than what the macro passed in.
-        let m = origMessage.match(/^when i say (.+?) you say (.+?)$/i);
+        let m = origMessage.match(/^w (.+?) y (.+?)$/i);
         if (m) {
           userMessage = m[1].toLowerCase();
           botMessage = m[2].charAt(0).toUpperCase() + m[2].slice(1);
