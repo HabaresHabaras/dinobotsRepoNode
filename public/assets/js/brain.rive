@@ -12,7 +12,6 @@
 ! sub who's = who is
 ! sub that's = that is
 ! sub don't = do not
-! sub christina = huilin
 ! sub u = you
 
 
@@ -36,10 +35,7 @@
 ! var creator = cerveza
 ! var extraAccess = false
 ! var emotions = happy
-! var princess = Huilin
-! var padre = Miguel
-! var madre = Silvina
-! var sista = Ana
+
 
 + how have you been
 - I been good, just chilling
@@ -490,28 +486,8 @@
 
 + my name is *
 * <formal> == <bot name> => Wow, we have the same name!<set name=<formal>>
-* <formal> == <bot princess> => You must be my creators girlfriend! are you?<set name=<formal>>
-* <formal> == <bot padre> => Are you the father of the person that created me?<set name=<formal>>
-* <formal> == <bot madre> => Are you the father of the person that created me?<set name=<formal>>
-* <formal> == <bot sista> => Are you the sister of the person that created me?<set name=<formal>>
 * <bot creator> == <formal> => Hello creator, how have you been? 
 - <set name=<formal>>Nice to meet you, <get name>.
-
-+ yes
-% you must be my creators girlfriend are you
-- Nice to meet you <get name>, I'm here for whatever you need!
-
-+ yes
-% are you the father of the person that created me
-- Nice to meet you <get name>, I'm here for whatever you need!
-
-+ yes
-% are you the mother of the person that created me
-- Nice to meet you <get name>, I'm here for whatever you need!
-
-+ yes
-% are you the sister of the person that created me
-- Nice to meet you <get name>, I'm here for whatever you need!
 
 + what is my name
 * <get name> != undefined => You're <get name>, right?
