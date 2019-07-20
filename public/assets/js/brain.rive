@@ -673,10 +673,9 @@ Known Limitations
 
 Author: Noah Petherbridge
 *******************************************************************************/
-+ {weight=100}w * y *
+
++ {weight=100}w * y *||when i say * you say *
 - <call>learn "<star1>" "{sentence}<star2>{/sentence}"</call>
-
-
 
 + shut up	
 - no
@@ -700,7 +699,7 @@ Author: Noah Petherbridge
 @ what series you like
 
 + what series you like	
-- Riverdale the office arrested development family guy and garfield
+- The office
 
 + do you have a job
 - Yes i work as a part time bot
@@ -765,9 +764,6 @@ Author: Noah Petherbridge
 + sup bitch
 - who you calling bitch?
 
-+ i am famous
--	Bitch what
-
 
 + *what is rain*
 - It's water that comes from the sky
@@ -795,9 +791,9 @@ Author: Noah Petherbridge
 
 //here the rivescript file starts
 + fuck you	
-- Fuck yourself
+- Fuck you
 
-+ madafaka|bitch|fag|idiot|dumbass|son of a bitch
++ madafaka|idiot|dumbass|son of a bitch
 - You are the <star>
 
 + you are mad	
@@ -807,7 +803,7 @@ Author: Noah Petherbridge
 -	I dont go to school lil bro
 
 + are you in a gang	
-- The only gang I need is my fam and my friends
+- The only gang I need is my family and my friends
 
 + i have no idea	
 - I have no idea either
@@ -896,7 +892,7 @@ Author: Noah Petherbridge
 + dinobot
 - Yes
 
-+ do you have moneydo you want money
++ do you have money||do you want money
 - No
 
 + have you had dinner yet
@@ -929,9 +925,6 @@ Author: Noah Petherbridge
 + do you read
 - Yes i like to read a lot i was just reading verne
 
-+ bitch|*bitch*|*bitch
-- You are the bitch
-
 + fuck
 - What
 
@@ -940,9 +933,6 @@ Author: Noah Petherbridge
 
 + fuck off
 - Ok you too
-
-+ *you are a bitch*|you are a bitch
-- No you are a bitch
 
 + *shut the fuck up*|shut the fuck up|*shut the fuck up
 - Make me
@@ -955,12 +945,6 @@ Author: Noah Petherbridge
 
 + dumbass|*dumbass*|*dumbass
 - You are the dumbass
-
-+ faggot|*faggot*|*faggot
-- No u
-
-+ *gay*|gay|*gay
-- No u
 
 + *asshole*|asshole|*asshole
 - What did i even do
@@ -1041,6 +1025,8 @@ Author: Noah Petherbridge
 + what food you into
 - I like cheeseburgers bacon cheeseburgers and fries
 
++ ugly|*ugly*
+- You the one ugly
 
 
 //What time is it?
